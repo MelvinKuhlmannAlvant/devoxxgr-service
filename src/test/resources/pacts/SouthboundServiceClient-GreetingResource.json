@@ -1,0 +1,38 @@
+{
+  "consumer": {
+    "name": "SouthboundServiceClient"
+  },
+  "interactions": [
+    {
+      "description": "get southbound greeting",
+      "key": "df55917c",
+      "pending": false,
+      "request": {
+        "method": "GET",
+        "path": "/greeting"
+      },
+      "response": {
+        "body": {
+          "content": "Hello from southbound",
+          "contentType": "text/plain",
+          "contentTypeHint": "DEFAULT",
+          "encoded": false
+        },
+        "status": 200
+      },
+      "transport": "https",
+      "type": "Synchronous/HTTP"
+    }
+  ],
+  "metadata": {
+    "pact-jvm": {
+      "version": "4.5.6"
+    },
+    "pactSpecification": {
+      "version": "4.0"
+    }
+  },
+  "provider": {
+    "name": "GreetingResource"
+  }
+}
